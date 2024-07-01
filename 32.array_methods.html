@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods-I</title>
+    <script>
+      var a=["iram","mehak","kiran","noor","sehar"];
+     // var b=a.concat("mishi","rohiya");
+    
+    
+     var b=["mishi","rohiya"];
+    var c=a.concat(b);
+    document.write(c+"<br/><br/>");
+    
+      document.write(a+"<br/><br/>");
+
+      //sort method
+      a.sort();
+      document.write(a+"<br/><br/>");
+      
+      //reverse method 
+      a.reverse();
+      document.write(a+"<br/><br/>");
+
+
+      //push & pop methods add or remove values from the end of the array.
+
+        //pop method
+        a.pop();
+        document.write(a+"<br/><br/>");
+
+        //push method
+        a.push("fozia");
+        document.write(a+"<br/><br/>");
+
+        //shift & unshift start say value ko remove ya add krtay hain.
+        //shift method
+        a.shift();
+        document.write(a+"<br/><br/>");
+
+        //unshift method
+        a.unshift("iram");
+        document.write(a+"<br/><br/>");
+
+        /*using concat method defined above (line #10)
+        document.write(b+"<br/><br/>");*/
+
+        //join method
+        var d= c.join(" - ");
+        document.write(d);
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>some&every method</title>
+        
+    <script>
+        var ages=[10,30,20,7,];   
+
+        document.write(ages+"<br/><br/>");
+        //some methd koi ak value b true ho to overall ko true kr deta hai
+        //every k lyay hr value ka true hona lazmi hai
+
+    //var b=ages.some(checkAdult);
+    var b=ages.every(checkAdult);
+      
+    document.write(b+"<br/><br/>");
+
+function checkAdult(age){
+    return age>=18;
+}
+      
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

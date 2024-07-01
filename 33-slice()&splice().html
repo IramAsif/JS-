@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods-II</title>
+    <script>
+      var a=["iram","mehak","kiran","noor","sehar"];   
+      document.write(a+"<br/><br/>");
+    
+      //slice  method
+      var b=a.slice(2,4);
+      //var b=a.slice(1);  ye 1 say end tk ki sari values print krwa day ga.
+
+      document.write(b+"<br/><br/>");
+        // thw following code will return all the values (value=>2) index
+      var b=a.slice(2);
+      document.write(b+"<br/><br/>");
+      //ye - mai b kr sktay hai.. pr us surt mai ye ulta chlay ga..
+      // -5 -4 -3 -2 -1
+      var b=a.slice(-2);
+      document.write(b+"<br/><br/>");
+
+      //splice method
+      document.write(a+"<br/><br/>");
+
+      a.splice(2,0,"fozia","malaika");  // for deletion     a.splice(2,0,"fozia","malaika"); 
+      document.write(a+"<br/><br/>");
+      //idr -ve value b pass kr sktay hain  a.splice(2,1,"fozia","malaika"); 
+    // agr hm koi value add nhi krna cht'tay to b ye method srf deletion k lye use kr sktay hain       a.splice(2,1);     
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

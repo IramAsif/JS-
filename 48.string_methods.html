@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methos</title>
+    <script>
+    var str="JavaScript is a great language";
+    document.write(str +"<br/>");
+
+    var a=str.length;// length ak property hai is mai end pr brackets nhi lgain gi..
+    document.write(a+"<br/>"); 
+
+    var a=str.toLowerCase();// ye ak methood/function hai is k aay round braces aein gi
+    document.write(a+"<br/>"); 
+
+    var a=str.toUpperCase();
+    document.write(a+"<br/>"); 
+
+
+    var a=str.includes("is");// ye search krta hai letter ko mil jae to true return kr deta hai nhi to false. ye case sensitive function hai
+    document.write(a+"<br/>"); 
+
+   var a=str.startsWith("JavaScript");// ye string mai mojod phlay word ko check kr k btata hai k diyay gae word say match hai ya nhi..
+   document.write(a+"<br/>"); 
+   
+   var a=str.endsWith("language");// ye string mai mojod last word ko check kr k btata hai k diyay gae word say match hai ya nhi..
+    document.write(a+"<br/>"); 
+  
+    var a=str.search("is");// ye hmain true ya false return nhi krta blkay word ki position ya index return krta hai....isay agr koi word ya letter na milay to ye -1 return krta hai...
+    document.write(a+"<br/>"); 
+
+    var a=str.match(/a/g); // ye function serch ki trha letter ko search krta hai but index return nhi krta , ye un letters ko ikatha krta jata hai or unki ak array bna deta hai..   idr g ka mtlb hai globally.
+    document.write(a+"<br/>"); 
+
+    var a=str.indexOf("is"); // ye is ko search krna shoro kray ga or jdr is mil gya uska index bta day ga
+    document.write(a+"<br/>"); 
+
+
+    var a=str.lastIndexOf("is"); // ye is ko search krna last kray ga or jdr is mil gya uska index bta day ga
+    document.write(a+"<br/>"); 
+
+    var a=str.replace("JavaScript","PHP"); // ye simple replacememt hai yani jdr isay word mil gya bs odr usko change kr k ruk gae ga...
+    document.write(a+"<br/>"); 
+
+    var a=str.replace(/is/g,"are");// ye jitni bar b is aa raha hai string k andr us sb ko are say replace krda ga.. agr esay nhi likhay gay to srf phlay is ko are mai change kray ga
+    document.write(a+"<br/>"); 
+
+    var b="     js   ";
+    var c=b.trim(); //ye left right say space ko remove kr deta hai
+    alert(c); //alert is lyay use kiya hai k document.write mai space show nhi hoti..
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

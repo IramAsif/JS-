@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find & findIndex method</title>
+        
+    <script>
+        var ages=[10,30,20,7,];   
+
+        document.write(ages+"<br/><br/>");
+    
+    var b=ages.find(checkAdult); // find ka method just value return kr k deta hai
+    document.write(b+"<br/><br/>");
+
+    var b=ages.findIndex(checkAdult);// ye method value index return krta hai
+      
+    document.write(b+"<br/><br/>");
+
+function checkAdult(age){
+    return age>=18;
+}
+      
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

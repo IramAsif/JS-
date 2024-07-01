@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Methods</title>
+    <script>
+// foloowing are the functions related to date
+
+   var now= new Date();
+   // document.write(now); // ye function aj ki date time , or addtional info return krta hai
+ 
+    document.write(now.toDateString());// ye funtion srf date or day return krta hai
+    document.write("<br>");
+    document.write(now.getDate());// ye srf date return kray ga
+    document.write("<br>");
+    document.write(now.getFullYear());// ye full year return krta hai
+    document.write("<br>");
+    document.write(now.getMonth());// ye month return krta hai... january=0, february=1, march=2,april=3 and so on..
+    document.write("<br>");   
+    document.write(now.getDay());// ye weel day return krta hai.. 0 mtlb sun, 1 mtlb mon, 2 mtlb tues ..
+    document.write("<br>");   
+    var now= new Date('September 3 2002'); // past mai ja k jb hm time wgera dekhnay ki koshish krtay hain to wo hmain sb zero return krta hai.. yani 12:00 
+    document.write(now.getMonth()); // on above date, jo b month tha wo in the form of integer return kray ga
+    document.write("<br>");   
+    document.write(now.getDay());//on above date, jo b day tha wo in the form of integer return kray ga
+    document.write("<br>");
+    document.write(now.getFullYear());//on above date, jo b year tha wo in the form of integer return kray ga
+    document.write("<br>");   
+  
+
+// following are the functions related to time
+
+    var now= new Date();
+    document.write(now.getHours());
+    document.write("<br>");   
+    document.write(now.getMinutes());
+    document.write("<br>");   
+    document.write(now.getSeconds());
+    document.write("<br>");   
+    document.write(now.getMilliseconds());
+    document.write("<br>");   
+    document.write(now.getMinutes());
+    document.write("<br>");   
+
+// following are the functions related ti set
+    now.setDate(23);    
+    document.write(now);
+    document.write("<br>");   
+    now.setFullYear(2050);    
+    document.write(now);
+    document.write("<br>");   
+    now.setMonth(2);    
+    document.write(now);
+    document.write("<br>");  
+    now.setHours(2);    
+    document.write(now);
+    document.write("<br>");   
+// for actual use , hm is trha say print krwatay hain date ko
+    var now= new Date();
+    document.write(now.getDate()+"/"+now.getMonth()+"/"+now.getFullYear());// idr month ak nmbr peechay day ga q k is nay january ko 0 say start kiya hai
+
+
+
+
+
+
+</script>
+</head>
+
+<body>
+
+</body>
+
+</html>

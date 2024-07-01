@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Method-II</title>
+    <script>
+    var str="JavaScript is a great language";
+    var str2=" Hello";
+    var str3=" World";
+    document.write(str +"<br/>");
+    var a=str.charAt(6);// ye kisi specific jga pr mojob word ka index btata hai hm isay index detay hain ye odr mojod letter return kr deta hai... jo index exist nhi krta bilfrz-300 to us pr ye kuch b return nhi kray ga
+    //var a=str.charAt(600); kuch b return nhi kray ga q k 600 index hai hi nhi na is k opr koi letter hai..
+    document.write(a+"<br/>");
+
+     a=str.charCodeAt(8);// ye hmain mentioned index pr mojod character ka ASCII code return kr day ga
+    document.write(a+"<br/>");
+
+     a=String.fromCharCode(234); // ye hmain keyboard pr mojod kisi b character ka ASCII code return kray ga
+    document.write(a+"<br/>");
+
+    //var a= str.concat(str2);
+     a= str.concat(str2,str3);
+    document.write(a+"<br/>");
+
+
+    a= str.split(" "); // ye string ko tor ko jdr jdr space ho gi odrtk hr word ko separate kray ga yani ak space say dosri space tk .. or ak array return kray ga...
+    a= str.split("i");// is mai jdr b "i" aey ga odr say split kr day ga
+    document.write(a+"<br/>");
+
+    a= str.repeat(4);    // ye diyay gaey string ko d gae value k mutabiq repeat kr deta hai ..
+    document.write(a+"<br/>");
+
+    a= str.slice(4);  // ye diyay gaey index say agay tk ki value return kr day ga...   yani 4 or us say bad k indexes..
+    document.write(a+"<br/>");
+     a= str.slice(4,18); // ye 4 say 8 tk k letter return kr day ga
+    document.write(a+"<br/>");
+    a= str.slice(0); // zero likhay say total string waps return kr day ga
+    document.write(a+"<br/>");
+    a= str.slice(-1); //ye last character return kray ga.. -1 ka mtlb end say charcters ko count kr k return krna.... -4 -3 -2 -1 idr -1 last value hai jo return ki jae gi
+    document.write(a+"<br/>");
+
+    a= str.substr(6);// ye slice ki trha e kam krta hai . 6 or is k agay say saray string return kr day ga..
+    document.write(a+"<br/>");
+    a= str.substr(6,15);// ye 6 say lay kr 15 tk k characters return kray ga
+    document.write(a+"<br/>");
+    
+    a= str.substring(6,15); // ye b trkeen slice ki trha hi hai frq bs itna hai k ye last index ko count nhi kray ga .. yani 6a say 15 ko likhnay ka kaha gya hai to say 6 say shoro kr k 14 tk k characters ko print kr day ga..
+    document.write(a+"<br/>");
+   
+
+    var c=50;
+    var d=c.toString(); // ye c ko string mai bdl day ga.
+    document.write(d+20+"<br/>");// idr ye 20 ko add nhi kray ga q k ab 20 string hai numeric nhi...
+
+    var a=str.valueOf(); // ye str ki value ko as it is return kr day ga ye khas use nhi hota
+    document.write(a);
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

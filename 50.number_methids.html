@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Methods</title>
+    <script>
+    var a= "99";
+   var num = Number(a);
+   document.write(a+"<br/>");
+   document.write(num+10);
+
+   document.write("<br/>");
+   document.write("<br/>");
+   document.write("<br/>");
+   
+
+   //for Boolean values
+
+   var a= true;
+   var num = Number(a);
+   document.write(a+"<br/>");
+   document.write(num);
+
+   document.write("<br/>");
+   document.write("<br/>");
+   document.write("<br/>");
+   //var d= "99.57";
+   //var d= "99 57";
+  //var d= "0099 years";
+   var d= "99 years";
+
+   var num1 = parseInt(d); // ye function hmain phli value return krta hai.. for example: 10.6 mai 10 or 11 99 00 mai 11
+   document.write(d+"<br/>");
+   document.write(num1);
+   document.write("<br/>");
+   document.write("<br/>");
+   document.write("<br/>");
+   var d= 99.57;
+   //var d=  99.57;
+   //var d= "0099 years";
+   //var d= "99 years";
+
+   var num1 = parseFloat(d); // ye function hmain complete value return krta hai.. for example: 10.6 mai 10.6 or 11 99 00 mai 11
+   document.write(d+"<br/>");
+   document.write(num1);
+
+   document.write("<br/>");
+   document.write("<br/>");
+   document.write("<br/>");
+   //var d= -1239.7;
+   var d= Infinity; // infinity finite nhi hoti is lyay idr false return kray ga
+   var num1 = Number.isFinite(d); // ye function hmain finite or infinite ka btata hai.. true or false retuen kr k
+   document.write(d+"<br/>");
+   document.write(num1);
+
+   document.write("<br/>");
+   document.write("<br/>");
+   document.write("<br/>");
+   //var d= -1239.7; //ye false ho gi
+  // var d= 3456789-1239.7;// jwab float value hai is lyay false return kray ga
+  //var d= 14-7; // true
+ //var d= Infinity; // infinity ki isko smj nhi ati is lyay idr false return kray ga
+
+  var d=false;// boolean pr b false return kray ga q k wo integer nhi 
+   var num1 = Number.isInteger(d); // ye function hmain integer value ka btata hai.. true or false retuen kr k
+   document.write(d+"<br/>");
+   document.write(num1);
+
+   document.write("<br/>");
+   document.write("<br/>");
+   document.write("<br/>");
+
+   var c=7.579;
+   var num1 = c.toFixed(2); // ye function point k bad given parameter tk values ko fix kr deta hai
+   document.write(c+"<br/>");
+   document.write(num1);
+
+   document.write("<br/>");
+   document.write("<br/>");
+   document.write("<br/>");
+
+   var c=99.579;
+   var num1 = c.toPrecision(8); // ye function given decimal tk values ko fix kr deta hai utni hi values return krta hai jo decimal hm nay pas kiya hoa, agr hm nay 6.876 k sat 3 parameter pas kia to wo 6.78 return kray ga
+   document.write(c+"<br/>");
+   document.write(num1);
+
+
+
+
+   
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

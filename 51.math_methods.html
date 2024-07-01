@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Methods</title>
+    <script>
+    // math k saray functions ko use krnay k lyay Math.funcion_name ki trha likhna zrori hai..   
+    
+    var a=Math.ceil(3.2);// ye nearest upper value return krta hai..is pr 4 return kray ga
+    var a=Math.ceil(-1.2);// ye nearest downward value return krta hai..is pr -1 return kray ga
+   
+    document.write(a+"<br/>");
+   
+
+    document.write("<br/>");
+   // var a=Math.floor(3.2);//ye hmain hmesha nearest downward value return krta hai..is pr 3 return kray ga
+   var a=Math.floor(-1.2);// ye nearest upper value return krta hai..is pr -2 return kray ga
+   
+    document.write(a+"<br/>");
+    document.write("<br/>");
+   
+   var a=Math.round(5.456);// ye function calculator ki trha simply round about kr k pori ak value return krta hai mtlb for example 5.60 ka 6 or 9.23 ka 9
+    document.write(a+"<br/>");
+
+    document.write("<br/>");
+   
+   var a=Math.trunc(8.456);// ye function point k bad ki sari values ko remove kr day ga for example : 2.45 ka 2 or 56.78 ka 56
+    document.write(a+"<br/>");
+
+    document.write("<br/>");
+    var a=Math.max(3,56,78,34);// ye given value mai say max value return kray ga
+   // var a=Math.max(-123,-12);
+    document.write(a+"<br/>");
+
+    document.write("<br/>");
+   // var a=Math.min(3,56,78,34);// ye given value mai say min value return kray ga
+   var a=Math.min(-123,-12);
+    document.write(a+"<br/>");
+
+    document.write("<br/>");
+    var a=Math.sqrt(64);//  sqareroot return krta hai..8*8
+    document.write(a+"<br/>");
+
+    document.write("<br/>");
+    var a=Math.cbrt(64);// ye cuberoot return krta hai 4*4*4
+    document.write(a+"<br/>");
+
+    document.write("<br/>");
+    var a=Math.pow(4,3);// 4 base hai or 3 exponent ... mtlb 4's power is 3 , 4*4*4...
+    document.write(a+"<br/>");
+
+    document.write("<br/>");
+    //var a=Math.random();// ye function main koi b random value return nkrta hai, by default 0 or 1 k dryam mai say koi b random value return kr day ga or value hr bar refresh krnay say chnge ho gi
+    var a=Math.floor(Math.random()*10)+1;// ye hmaim 0 say 10 k drmyan ak random value return kray ga, jo float nhi, blkay proper integer ho gi
+    document.write(a+"<br/>");
+
+    document.write("<br/>");
+    //var a=Math.abs(3+4);// ye function hmain ak absolute value return krta hai..agr hm null dein gay to zero return kray ga.. or agr string dain gy to NaN (not a number) return kray ga
+    var a=Math.abs(-4);//4 return kray ga
+    document.write(a+"<br/>");
+   
+    document.write("<br/>");
+    var a=Math.PI;// ye simply PI ki value return krta hai
+    document.write(a+"<br/>");
+
+   
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
